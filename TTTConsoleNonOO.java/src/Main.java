@@ -4,6 +4,7 @@ import java.util.Scanner;
  * All variables/methods are declared as static (i.e., class)
  *  in this non-OO version.
  *  halloo
+ *  mustafa daud
  */
 public class Main {
     // Define named constants for:

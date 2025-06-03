@@ -51,6 +51,16 @@ public class Main {
             }
             // Switch currentPlayer
             currentPlayer = (currentPlayer == CROSS) ? NOUGHT : CROSS;
+            if(currentState != PLAYING) {
+                System.out.print("Play again (y/n)? ");
+                char ans = in.next().charAt(0);
+                if (ans != 'y' && ans != 'Y') {
+                    System.out.println("Bye!");
+                    System.exit(0);  // terminate the program
+                }else {
+                    initGame();
+                }
+            }
         } while (currentState == PLAYING); // repeat if not game over
     }
 

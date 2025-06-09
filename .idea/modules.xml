@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/A Console OO Tic-Tac-Toe/A Console OO Tic-Tac-Toe.iml" filepath="$PROJECT_DIR$/A Console OO Tic-Tac-Toe/A Console OO Tic-Tac-Toe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/A Graphical Tic-Tac-Toe with OO Design/A Graphical Tic-Tac-Toe with OO Design.iml" filepath="$PROJECT_DIR$/A Graphical Tic-Tac-Toe with OO Design/A Graphical Tic-Tac-Toe with OO Design.iml" />
       <module fileurl="file://$PROJECT_DIR$/Final Project.iml" filepath="$PROJECT_DIR$/Final Project.iml" />
       <module fileurl="file://$PROJECT_DIR$/TTTConsoleNonOO.java/TTTConsoleNonOO.java.iml" filepath="$PROJECT_DIR$/TTTConsoleNonOO.java/TTTConsoleNonOO.java.iml" />
     </modules>

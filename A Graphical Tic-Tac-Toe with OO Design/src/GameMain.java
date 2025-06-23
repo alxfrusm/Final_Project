@@ -38,7 +38,6 @@ public class GameMain extends JPanel {
                 if (currentState == State.PLAYING && board.cells[row][col].content == Seed.NO_SEED) {
                     board.cells[row][col].content = currentPlayer;
 
-                    // Update status dulu sebelum ganti giliran
                     updateGame(currentPlayer, row, col);
 
                     if (currentState == State.PLAYING) {
@@ -58,7 +57,7 @@ public class GameMain extends JPanel {
             }
         });
 
-        // Status label di atas, awalnya kosong
+        // Status label di atas
         statusLabel = new JLabel("");
         statusLabel.setHorizontalAlignment(SwingConstants.CENTER);
         statusLabel.setFont(new Font("Arial", Font.BOLD, 16));
@@ -101,7 +100,7 @@ public class GameMain extends JPanel {
         board.newGame();
         SoundEffect.initGame();
         retryButton.setVisible(false);
-        statusLabel.setText("");  // Kosongkan saat game mulai
+        statusLabel.setText("");
         repaint();
     }
 
@@ -122,7 +121,7 @@ public class GameMain extends JPanel {
             statusLabel.setText("Draw!");
             retryButton.setVisible(true);
         } else {
-            statusLabel.setText("");  // Kosongkan kalau masih main
+            statusLabel.setText("");
         }
     }
 
@@ -133,16 +132,5 @@ public class GameMain extends JPanel {
     @Override
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
-        // Tidak perlu gambar di sini karena gamePanel yang gambar
-    }
-
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> {
-            JFrame frame = new JFrame("Tic Tac Toe with Sound and Score");
-            frame.setContentPane(new GameMain());
-            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            frame.pack();
-            frame.setVisible(true);
-        });
     }
 }

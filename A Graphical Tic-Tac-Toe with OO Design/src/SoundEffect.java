@@ -37,7 +37,19 @@ public enum SoundEffect {
         }
     }
 
-    static void initGame() {
-        values();
+    public void stop() {
+        if (clip != null && clip.isRunning()) {
+            clip.stop();
+        }
+    }
+
+    public static void initGame() {
+        values();  // memuat semua instance enum agar siap digunakan
+    }
+
+    public static void stopAll() {
+        for (SoundEffect sfx : values()) {
+            sfx.stop();
+        }
     }
 }
